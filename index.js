@@ -99,7 +99,29 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+let enKucuk = (sayi) => {
+  let enKucukSayi = sayi[0];
+  for (let i = 0; i < sayi.length; i++) {
+    if (sayi[i] < enKucukSayi) {
+      enKucukSayi = sayi[i];
+    }
+  }
+  return enKucukSayi;
+}
+
+console.log(enKucuk(sayilar));
+
+let enBuyuk = (sayi) => {
+  let enBuyukSayi = sayi[0];
+  for (let i = 0; i < sayi.length; i++) {
+    if (sayi[i] > enBuyukSayi) {
+      enBuyukSayi = sayi[i];
+    }
+  }
+  return enBuyukSayi
+}
+
+console.log(enBuyuk(sayilar));
 
 // 3b çözümü:
 
