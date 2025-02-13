@@ -125,7 +125,14 @@ console.log(enBuyuk(sayilar));
 
 // 3b çözümü:
 
-/* kodlar buraya */
+let uceTamBolunenler = [];
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    uceTamBolunenler.push(sayi);
+  }
+});
+
+console.log(uceTamBolunenler);
 
 // 3c çözümü:
 
