@@ -143,7 +143,9 @@ let uceTamBolunenlerinToplami = uceTamBolunenler.reduce((toplam, sayi) => toplam
 
 // 3d çözümü
 
-/* kodlar buraya */
+let besYuzdenKucukSayilar = sayilar.filter((sayi) => sayi < 500);
+
+//console.log(besYuzdenKucukSayilar);
 
 // 3e çözümü
 
