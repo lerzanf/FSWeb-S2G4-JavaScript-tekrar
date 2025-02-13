@@ -41,7 +41,7 @@ function KareninAlani(kenaruzunlugu) {
 }
 
 /* (Oto test yok) Yukarıdaki KareninAlani fonksiyonunu kenar uzunluğu = 10 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(KareninAlani(10));
+//console.log(KareninAlani(10));
 /* GÖREV 1:  
 - CemberinCevresi fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
 	1. CemberinCevresi fonksiyonu parametre olarak sadece çemberin yarıçapını alacaktır. 
@@ -55,7 +55,8 @@ function CemberinCevresi(yaricap) {
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(CemberinCevresi(5));
+// console.log(CemberinCevresi(5));
+
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
 	1. Argüman olarak çemberin yarıçapını BİRİNCİ parametre olacak alacaktır. 
@@ -69,7 +70,7 @@ function CemberinAlani(yaricap, pi) {
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(CemberinAlani(15, pi));
+//console.log(CemberinAlani(15, pi));
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
 		3a. enbuyuk ve enkucuk isminde 2 adet değişken tanımlayın ve sayilar dizisindeki en küçük sayı ile en büyük sayıyı bu değişkenlere atayın. (for döngüsü kullanın)
@@ -109,7 +110,7 @@ let enKucuk = (sayi) => {
   return enKucukSayi;
 }
 
-console.log(enKucuk(sayilar));
+//console.log(enKucuk(sayilar));
 
 let enBuyuk = (sayi) => {
   let enBuyukSayi = sayi[0];
@@ -121,7 +122,7 @@ let enBuyuk = (sayi) => {
   return enBuyukSayi
 }
 
-console.log(enBuyuk(sayilar));
+//console.log(enBuyuk(sayilar));
 
 // 3b çözümü:
 
@@ -132,11 +133,13 @@ sayilar.forEach((sayi) => {
   }
 });
 
-console.log(uceTamBolunenler);
+//console.log(uceTamBolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+let uceTamBolunenlerinToplami = uceTamBolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
+
+//console.log(uceTamBolunenlerinToplami);
 
 // 3d çözümü
 
