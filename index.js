@@ -149,7 +149,9 @@ let besYuzdenKucukSayilar = sayilar.filter((sayi) => sayi < 500);
 
 // 3e çözümü
 
-/* kodlar buraya */
+let siraliSayilar = besYuzdenKucukSayilar.sort((a, b) => a - b);
+
+// console.log(siraliSayilar);
 
 // 3f çözümü
 
