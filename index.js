@@ -155,8 +155,26 @@ let siraliSayilar = besYuzdenKucukSayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let tekrarEdenSayilar = [];
 
+let tekrar = {};
+
+sayilar.forEach((sayi) => {
+  if (tekrar[sayi] === undefined) {
+    tekrar[sayi] = 1;
+  } else {
+    tekrar[sayi] = tekrar[sayi] + 1;
+  }
+});
+
+  for (let sayi in tekrar) {
+    if( tekrar[sayi] > 1) {
+      tekrarEdenSayilar.push(`${sayi} sayısı ${tekrar[sayi]} kere tekrar edilmiştir`);
+    }
+  }
+
+  console.log(tekrarEdenSayilar);
+  
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
 function sa() {
